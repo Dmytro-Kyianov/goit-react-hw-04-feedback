@@ -1,6 +1,6 @@
 import { countTotalFeedback } from './countTotalFeedback';
-export const countPositiveFeedbackPercentage = (state, good) => {
-  const total = countTotalFeedback(state);
+export const countPositiveFeedbackPercentage = (good, neutral, bad) => {
+  const total = countTotalFeedback(good, neutral, bad);
   let result = 0;
 
   if (total !== 0) {
